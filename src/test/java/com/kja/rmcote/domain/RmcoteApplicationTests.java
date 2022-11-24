@@ -1,4 +1,4 @@
-package com.kja.rmcote;
+package com.kja.rmcote.domain;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
