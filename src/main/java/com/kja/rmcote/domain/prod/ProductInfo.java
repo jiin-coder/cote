@@ -5,9 +5,11 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
+import java.util.Date;
 
 @ToString
 @Getter
@@ -27,7 +29,7 @@ public class ProductInfo {
     private int price; // 금액
 
     @Column(name= "prod_reg_date", nullable = false)
-    private LocalDateTime prodRegDate; // 등록일자
+    private LocalDateTime prodRegDate = LocalDateTime.now(); // 등록일자
 
     @Column(name= "reg_co_name", nullable = false)
     private String regCoName; // 등록업체명
